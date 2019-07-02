@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+   Fhrenheit:<input id="f"value=""type="number"onchange="tinh()">
+<p id = "result"></p>
+<script>
+    function tinh() {
+        let result1 = 0;
+        let f = document.getElementById("f").value;
+        result1 = (f - 32)/1.8;
+        document.getElementById("result").innerText = "Celcius: "+result1;
+    }
+</script>
+</body>
+</html>
